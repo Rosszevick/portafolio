@@ -1,0 +1,84 @@
+body{
+
+    margin: px;
+}
+
+.container {
+    display: grid;
+
+    background-image: url(/Portafolio/multimedia/grafitti.jpg); 
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 7fr 1fr;
+    grid-column-gap: 9px;
+    grid-row-gap: 10px;
+    grid-template-areas:
+        "header header header"
+        "section section aside"
+        "footer footer footer"
+    ;
+
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(240, 255, 246, 0.555);
+    font-size: 180%;
+    
+}
+
+section{
+    grid-area: section;
+    vertical-align: bottom;
+    display: inline-block;
+    font-style: italic;
+
+    background-color: rgba(240, 255, 246, 0.555);
+}
+
+aside{
+    background-color: rgba(240, 255, 246, 0.555);
+
+}
+
+footer {
+    display: flex;
+    grid-area: footer;
+    background-color: rgba(240, 255, 246, 0.555);
+
+}
+
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.redes{
+    width: 50%;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.foto{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border-style:double;
+    border-color:black;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+
+
